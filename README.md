@@ -1,7 +1,8 @@
 # 📘 Flowdiary Skill Tracker
 Flowdiary Skill Tracker is a simple website that helps you keep track of the skills you are learning. You can add new skills, mark them when done, and see your progress.
 
- #🌟 What You Can Do
+🌟 What You Can Do
+
 ✅ Add Skills – Write down the skills you want to learn.
 
 ☑️ Mark as Done – Click to show that you’ve finished learning a skill.

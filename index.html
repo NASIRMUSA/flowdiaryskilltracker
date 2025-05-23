@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowdiary Skill Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-graduation-cap"></i>
+            <h1>My Flowdiary Skill Tracker</h1>
+        </div>
+        
+        <div class="content">
+            <form class="skill-form" id="skill-form">
+                <input type="text" class="skill-input" id="skill-input" placeholder="Enter a new skill..." required>
+                <button type="submit" class="add-btn">
+                    <i class="fas fa-plus"></i> Add
+                </button>
+            </form>
+            
+            <ul class="skill-list" id="skill-list">
+                <!-- Skills will be added here dynamically -->
+            </ul>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="progress-text">
+                <span>Your progress:</span>
+                <span class="progress-percent" id="progress-percent">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="sw.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(reg => console.log('Service Worker registered:', reg.scope))
+    .catch(err => console.log('Service Worker registration failed:', err));
+}
+
+    </script>
+</body>
+</html>

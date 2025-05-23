@@ -3,6 +3,11 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/manifest.json',
+<<<<<<< HEAD
+=======
+  '/icon-192.png',
+  '/icon-512.png',
+>>>>>>> 13b4e65f1a3a18537c9ec382c528cbaa7d603f8a
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
 ];
 

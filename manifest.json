@@ -4,5 +4,21 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#f8fafc",
+<<<<<<< HEAD
   "theme_color": "#6366f1"
+=======
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+>>>>>>> 13b4e65f1a3a18537c9ec382c528cbaa7d603f8a
 }
